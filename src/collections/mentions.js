@@ -14,12 +14,16 @@ var Mentions = Backbone.Collection.extend({
   'initialize': function initialize () {
     var socket = io('http://localhost:8090');
 
+    socket.on('connection', function errorConnect (data) {
+      console.log(data);
+    });
+
     socket.on('tweets', function loadTweets (data) {
       this.addMention(data);
     }.bind(this));
   },
   'addMention': function addMention (mention) {
-    if (this.length >= 5) {
+    if (this.length >= 6) {
       this.pop();
       this.unshift(mention);
       return;

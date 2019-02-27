@@ -9,9 +9,9 @@ module.exports = Backbone.Model.extend({
       'name': '',
       'avatar': ''
     },
-    'replyCount': 0,
-    'retweetCount': 0,
-    'favoriteCount': 0,
+    'reply_count': 0,
+    'retweet_count': 0,
+    'favorite_count': 0,
     'coordonates': false
   }
 });

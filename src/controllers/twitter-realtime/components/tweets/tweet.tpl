@@ -13,9 +13,10 @@
       <img class="optionalMedia-img" src="https://i.imgur.com/kOhhPAk.jpg">
     </div>
     <div class="tweetEntry-action-list" style="line-height:24px;color: #b1bbc3;">
-      <i class="fa fa-retweet" style="width: 80px"><%- locals[i].retweetCount%></i>
-      <i class="fa fa-heart" style="width: 80px"><%- locals[i].favoriteCount%></i>
-      <i class="fa fa-reply" style="width: 80px;"><%- locals[i].replyCount%></i>
+      <i class="fa fa-retweet" style="width: 80px"><%- locals[i].retweet_count%></i>
+      <i class="fa fa-heart" style="width: 80px"><%- locals[i].favorite_count%></i>
+      <i class="fa fa-reply" style="width: 80px;"><%- locals[i].reply_count%></i>
+      <i class="fas fa-map-marker" style="width: 80px;"><%- locals[i].coordonates%></i>
     </div>
   </div>
 </div>
