@@ -4,7 +4,7 @@
     <div class="tweetEntry-content">
       <img class="tweetEntry-avatar" src="<%- locals[i].user.avatar %>">
       <strong class="tweetEntry-fullname"><%- locals[i].user.name %></strong>
-      <span class="tweetEntry-timestamp"><%- locals[i].createAt %></span>
+      <span class="tweetEntry-timestamp"><%- locals[i].created_at %></span>
       <div class="tweetEntry-text-container">
        <p><%- locals[i].text %></p>  
       </div>

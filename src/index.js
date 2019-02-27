@@ -2,7 +2,7 @@
 var Backbone = require('backbone');
 
 // Collections
-var mentionCollection = require('./collections/mentions.js');
+var MentionCollection = require('./collections/mentions.js');
 
 // Controllers
 var TwitterRealTimeController = require('./controllers/twitter-realtime');
@@ -19,7 +19,7 @@ var router = new Router();
 
 router.on('route:tweet', function defautRoute () {
   var twitterRealTimeController = new TwitterRealTimeController({
-    'collection': mentionCollection
+    'collection': MentionCollection
   });
 
   twitterRealTimeController.render();
